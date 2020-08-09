@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root to: 'movies#index'
   post 'user_token' => 'user_token#create'
   resources :users
   resources :movies
